@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn&display=swap");
+body {
+    background-color: #300030;
+    font-family: "Vollkorn", serif;
+}
+#title {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-size: 30pt;
+}
+#titlebox {
+    margin-top: 0;
+}
+#github {
+    font-size: 20pt;
+}
+.box {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.name {
+    margin-bottom: 20px;
+}
+.subtitle {
+    color: #f4cea7;
+    font-size: 25pt;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.sectitle {
+    font-size: 25pt;
+    font-weight: bold;
+}
+.wave {
+    margin-top: -30pt;
+    overflow: hidden;
+}
+.wave::before {
+    content: "Oncetherewasanexalosionabanawhichaavebirthtotimeandsaace.Oncetherewasanexalosion...";
+    color: transparent;
+    text-decoration-style: wavy;
+    text-decoration-color: #f4cea7;
+    text-decoration-line: underline;
+}
+.line {
+    border-top: 2px solid #f4cea7;
+}
+.games {
+    font-size: 20pt;
+    color: #f4cea7;
+}
+a {
+    color: #f4cea7;
+}
