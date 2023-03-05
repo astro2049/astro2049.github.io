@@ -12,13 +12,9 @@ body {
     margin-left: auto;
     margin-right: auto;
     text-align: left;
-    font-size: 30pt;
 }
 #titlebox {
     margin-top: 0;
-}
-#github {
-    font-size: 20pt;
 }
 .box {
     padding-left: 20px;
@@ -28,6 +24,7 @@ body {
 }
 .name {
     margin-bottom: 20px;
+    font-size: 30pt;
 }
 .subtitle {
     color: #f4cea7;
@@ -41,6 +38,7 @@ body {
 }
 .wave {
     margin-top: -30pt;
+    font-size: 30pt;
     overflow: hidden;
 }
 .wave::before {
@@ -56,6 +54,9 @@ body {
 .games {
     font-size: 20pt;
     color: #f4cea7;
+}
+#github {
+    font-size: 20pt;
 }
 a {
     color: #f4cea7;
