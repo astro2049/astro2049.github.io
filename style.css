@@ -3,7 +3,7 @@ body {
     background-color: #300030;
     font-family: "Vollkorn", serif;
 }
-#title {
+#the-container {
     position: absolute;
     top: 30px;
     left: 0;
@@ -11,10 +11,6 @@ body {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    text-align: left;
-}
-#titlebox {
-    margin-top: 0;
 }
 .box {
     padding-left: 20px;
@@ -22,20 +18,33 @@ body {
     margin-top: 40px;
     margin-bottom: 40px;
 }
-.name {
-    margin-bottom: 20px;
+.heading {
+    color: #ffe1bb;
+}
+.h-1 {
     font-size: 30pt;
+    font-weight: bold;
 }
-.subtitle {
+.h-2 {
+    font-size: 25pt;
+    font-weight: bold;
+}
+.h-3 {
+    font-size: 20pt;
+    font-weight: bold;
+}
+.t-normal {
+    font-size: 20pt;
     color: #f4cea7;
-    font-size: 25pt;
-    font-weight: bold;
-    margin-bottom: 15px;
 }
-.sectitle {
-    font-size: 25pt;
-    font-weight: bold;
+.t-note {
+    font-size: 20pt;
+    color: #c29c75;
 }
+a {
+    color: #f4cea7;
+}
+
 .wave {
     margin-top: -30pt;
     font-size: 30pt;
@@ -47,17 +56,4 @@ body {
     text-decoration-style: wavy;
     text-decoration-color: #f4cea7;
     text-decoration-line: underline;
-}
-.line {
-    border-top: 2px solid #f4cea7;
-}
-.games {
-    font-size: 20pt;
-    color: #f4cea7;
-}
-#github {
-    font-size: 20pt;
-}
-a {
-    color: #f4cea7;
 }
