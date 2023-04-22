@@ -5,7 +5,7 @@ body {
 }
 #the-container {
     position: absolute;
-    top: 30px;
+    top: 0;
     left: 0;
     right: 0;
     max-width: 1200px;
@@ -41,8 +41,11 @@ body {
     font-size: 20pt;
     color: #c29c75;
 }
-a {
-    color: #f4cea7;
+a#hourglass-twins:link {
+    text-decoration: none;
+}
+a#hourglass-twins:hover {
+    text-decoration: underline;
 }
 
 .wave {
