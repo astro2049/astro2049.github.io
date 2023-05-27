@@ -47,6 +47,12 @@ a#hourglass-twins:link {
 a#hourglass-twins:hover {
     text-decoration: underline;
 }
+a#brittle-hollow:link {
+    text-decoration: none;
+}
+a#brittle-hollow:hover {
+    text-decoration: underline;
+}
 
 .wave {
     margin-top: -30pt;
