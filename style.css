@@ -41,16 +41,10 @@ body {
     font-size: 20pt;
     color: #c29c75;
 }
-a#hourglass-twins:link {
+a.planets:link {
     text-decoration: none;
 }
-a#hourglass-twins:hover {
-    text-decoration: underline;
-}
-a#brittle-hollow:link {
-    text-decoration: none;
-}
-a#brittle-hollow:hover {
+a.planets:hover {
     text-decoration: underline;
 }
 
