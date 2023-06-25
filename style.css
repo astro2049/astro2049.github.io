@@ -47,6 +47,9 @@ a.planets:link {
 a.planets:hover {
     text-decoration: underline;
 }
+#arrow-down:hover {
+    text-decoration: none;
+}
 
 .wave {
     margin-top: -30pt;
