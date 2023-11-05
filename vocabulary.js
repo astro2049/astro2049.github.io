@@ -48,7 +48,6 @@ const words = [
     ["notion", "概念"],
     ["presage", "预示"],
     ["spout", "喷口"],
-    ["fact", "事实"],
     ["synopsis", "概要"],
     ["catapult", "弹射器"],
     ["morphing", "变形"],
