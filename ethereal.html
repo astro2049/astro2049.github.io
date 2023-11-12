@@ -23,19 +23,71 @@
     </div>
     <div class="box" style="margin-top: 0">
         <div class="row">
-            <p class="heading h-3">Differentials</p>
-            <p class="t-note">Given a function y = f(x) the differential dy = df of f is given by</p>
-            <p class="t-normal" style="text-align: center">
-                \( dy = df = f'(x) dx \)
+            <p class="heading h-3">Taylor's inequality theorem</p>
+            <p class="t-note">
+                Let \( f \) be a real-valued function that is \( (n+1) \)-times differentiable on an interval containing
+                \( a \). Let \( T_n(x) \) be the \( n \)-th Taylor polynomial centered at \( a \) for \( f \), given by
+            </p>
+            <p class="t-normal">
+                \[
+                T_n(x) = f(a) + f'(a)(x-a) + \frac{{f''(a)}}{{2!}}(x-a)^2 + \frac{{f'''(a)}}{{3!}}(x-a)^3 + \ldots +
+                \frac{{f^{(n)}(a)}}{{n!}}(x-a)^n
+                \]
+            <p class="t-note">
+                Then, for any \( x \) in the interval containing \( a \), there exists a number \( c \) and \( M \) an
+                upper bound for the absolute value of the \( (n+1) \)-th derivative of \( f \),
+            </p>
+            <p class="t-normal">
+                \[
+                |f^{(n+1)}(c)| \leq M
+                \]
+            </p>
+            <p class="t-note">such that the error \( R_n(x) \) between the actual value of \( f(x) \) and the value
+                predicted by the Taylor polynomial satisfies
+            </p>
+            <p class="t-normal">
+                \[
+                |f(x) - T_n(x)| \leq \frac{{M}}{{(n+1)!}}|x-a|^{n+1}
+                \]
+            </p>
+            <p class="t-note">
+                This inequality provides an upper bound on the error between the function \( f(x) \) and its Taylor
+                polynomial approximation \( T_n(x) \), making it a useful tool for estimating the accuracy of the
+                approximation.
+            </p>
+        </div>
+        <div class="row">
+            <p class="heading h-3">Taylor Polynomials</p>
+            <p class="t-note">The nth order Taylor polynomial of \( f \) at the point a is</p>
+            <p class="t-normal">
+                \[
+                T_n(x) = \sum_{k=0}^{n} \frac{1}{k!}{f^{(k)}(a)}(x-a)^k
+                \]
+            </p>
+            <p>
+                <span class="t-note">Basic property: </span>
+                <span class="t-normal">\( f^{(k)}(a) = T_n^{(k)}(a) \) for \( k \) = 0, 1,..., n.</span>
+                <span class="t-note">The derivative of the \( k \)th term in \( T_n \)is \( f^{(k)}(a) \).</span>
+            </p>
+        </div>
+        <div class="row">
+            <p class="heading h-3">Differentials (a.k.a. very small differences)</p>
+            <p class="t-note">Given a function \( y = f(x) \) the differential \( dy = df \) of \( f \) is given by</p>
+            <p class="t-normal">
+                \[
+                dy = df = f'(x) dx
+                \]
             </p>
         </div>
         <div class="row">
             <p class="heading h-3">Linearization</p>
-            <p class="t-normal" style="text-align: center">
-                \( L(x) = f'(a)(x - a) + f(a) \)
+            <p class="t-normal">
+                \[
+                L(x) = f'(a)(x - a) + f(a)
+                \]
             </p>
-            <p class="t-note">The linear function whose graph is the tangent line at x = a is called the linearization
-                of f at a.</p>
+            <p class="t-note">The linear function whose graph is the tangent line at \( x = a \) is called the
+                linearization of \( f \) at \( a \).</p>
         </div>
         <div class="row">
             <p class="heading h-3">Standard Derivatives</p>
@@ -138,9 +190,13 @@
         </div>
         <div class="row">
             <p class="heading h-3">Tangent line</p>
-            <p class="t-note">Given a function f(x) the tangent line to the graph of f at the point a is given by</p>
-            <p class="t-normal" style="text-align: center">
-                \( y = f'(a)(x - a) + f(a) \)
+            <p class="t-note">
+                Given a function \( f(x) \) the tangent line to the graph of \( f \) at the point \( a \) is given by
+            </p>
+            <p class="t-normal">
+                \[
+                y = f'(a)(x - a) + f(a)
+                \]
             </p>
         </div>
     </div>
