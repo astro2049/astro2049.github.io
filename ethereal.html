@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Formulas</title>
+    <link href="favicon.svg" rel="icon"/>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script async id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        .row {
+            border-bottom: 1px solid #c29c75;
+        }
+    </style>
+</head>
+<body>
+<div id="the-container">
+    <div class="box" style="margin-top: 70px; margin-bottom: 0">
+        <p class="h-1 heading">Formulas</p>
+        <p class="t-normal" style="font-size: 15pt; font-weight: bold; margin-top: -20px; margin-bottom: 15px;">
+            [Context]: Calculus
+        </p>
+        <div class="wave"></div>
+    </div>
+    <div class="box" style="margin-top: 0">
+        <div class="row">
+            <p class="heading h-3">Differentials</p>
+            <p class="t-note">Given a function y = f(x) the differential dy = df of f is given by</p>
+            <p class="t-normal" style="text-align: center">
+                \( dy = df = f'(x) dx \)
+            </p>
+        </div>
+        <div class="row">
+            <p class="heading h-3">Linearization</p>
+            <p class="t-normal" style="text-align: center">
+                \( L(x) = f'(a)(x - a) + f(a) \)
+            </p>
+            <p class="t-note">The linear function whose graph is the tangent line at x = a is called the linearization
+                of f at a.</p>
+        </div>
+        <div class="row">
+            <p class="heading h-3">Standard Derivatives</p>
+            <div class="t-normal" style="text-align: center">
+                <div style="margin-bottom:15pt; display:flex; justify-content: space-between; align-items: center">
+                    <div class="t-note" style="width: 33%; font-size: 15pt">
+                        (power of x)
+                    </div>
+                    <div style="width: 33%">
+                        \( (x^n)' = nx^{n-1} \)
+                    </div>
+                    <div style="width: 33%"></div>
+                </div>
+                <div style="margin-bottom:15pt; display:flex; justify-content: space-between; align-items: center">
+                    <div class="t-note" style="width: 33%; font-size: 15pt">
+                        (exponential function)
+                    </div>
+                    <div style="width: 33%">
+                        \( (e^x)' = e^x \)
+                    </div>
+                    <div style="width: 33%"></div>
+                </div>
+                <div style="margin-bottom:15pt; display:flex; justify-content: space-between; align-items: center">
+                    <div class="t-note" style="width: 33%; font-size: 15pt">
+                        (natural logarithm)
+                    </div>
+                    <div style="width: 33%">
+                        \( (\ln(x))' = \frac{1}{x} \)
+                    </div>
+                    <div style="width: 33%"></div>
+                </div>
+                <div style="margin-bottom:15pt; display:flex; justify-content: space-between; align-items: center">
+                    <div class="t-note" style="width: 33%; font-size: 15pt">
+                        (sine function)
+                    </div>
+                    <div style="width: 33%">
+                        \( (\sin(x))' = \cos(x) \)
+                    </div>
+                    <div style="width: 33%"></div>
+                </div>
+                <div style="display:flex; justify-content: space-between; align-items: center">
+                    <div class="t-note" style="width: 33%; font-size: 15pt">
+                        (cosine function)
+                    </div>
+                    <div style="width: 33%">
+                        \( (\cos(x))' = -\sin(x) \)
+                    </div>
+                    <div style="width: 33%"></div>
+                </div>
+            </div>
+            <p class="heading h-3">Computation Rules</p>
+            <div class="t-normal" style="text-align: center">
+                <div style="margin-bottom:15pt; display:flex; justify-content: space-between; align-items: center">
+                    <div class="t-note" style="width: 33%; font-size: 15pt">
+                        Scalar mulitplication rule
+                    </div>
+                    <div style="width: 33%">
+                        \( [cf(x)]' = c f'(x) \)
+                    </div>
+                    <div style="width: 33%"></div>
+                </div>
+                <div style="margin-bottom:15pt; display:flex; justify-content: space-between; align-items: center">
+                    <div class="t-note" style="width: 33%; font-size: 15pt">
+                        Sum rule
+                    </div>
+                    <div style="width: 33%">
+                        \( [f(x) + g(x)]' = f'(x) + g'(x) \)
+                    </div>
+                    <div style="width: 33%"></div>
+                </div>
+                <div style="margin-bottom:15pt; display:flex; justify-content: space-between; align-items: center">
+                    <div class="t-note" style="width: 33%; font-size: 15pt">
+                        Product rule
+                    </div>
+                    <div style="width: 33%">
+                        \( [f(x)g(x)]' = f'(x)g(x) + f(x)g'(x) \)
+                    </div>
+                    <div style="width: 33%"></div>
+                </div>
+                <div style="margin-bottom:15pt; display:flex; justify-content: space-between; align-items: center">
+                    <div class="t-note" style="width: 33%; font-size: 15pt">
+                        Quotient rule
+                    </div>
+                    <div style="width: 33%">
+                        \( \left[\frac{f(x)}{g(x)}\right]' = \frac{f'(x)g(x) - f(x)g'(x)}{[g(x)]^2} \)
+                    </div>
+                    <div style="width: 33%"></div>
+                </div>
+                <div style="display:flex; justify-content: space-between; align-items: center">
+                    <div class="t-note" style="width: 33%; font-size: 15pt">
+                        Chain rule
+                    </div>
+                    <div style="width: 33%">
+                        \( [f(g(x))]' = f'(g(x))g'(x) \)
+                    </div>
+                    <div style="width: 33%"></div>
+                </div>
+            </div>
+            <p class="t-note"></p>
+        </div>
+        <div class="row">
+            <p class="heading h-3">Tangent line</p>
+            <p class="t-note">Given a function f(x) the tangent line to the graph of f at the point a is given by</p>
+            <p class="t-normal" style="text-align: center">
+                \( y = f'(a)(x - a) + f(a) \)
+            </p>
+        </div>
+    </div>
+    <div style="padding-top: 20px; padding-bottom: 40px">
+        <div class="box" style="display: flex; justify-content: space-between; align-items: center">
+            <div style="width: 33%; text-align: center">
+                <a class="t-normal planets" href="index.html" style="font-size: 15pt; font-style: italic">
+                    < Timber Hearth (24 km)
+                </a>
+            </div>
+            <div style="width: 33%; text-align: center">
+                <img alt="Giant's Deep from Outer Wilds. Originally made by u/rio_slayer_of_horny - Reddit."
+                     src="giants_deep.svg" width="200"/>
+            </div>
+            <div style="width: 33%"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
