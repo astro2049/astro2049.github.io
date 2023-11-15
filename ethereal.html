@@ -23,6 +23,60 @@
     </div>
     <div class="box" style="margin-top: 0">
         <div class="row">
+            <p class="heading h-3">Integration by Parts</p>
+            <p class="t-normal">
+                \[ \int_{a}^{b} f(x)g(x)\,dx = \left. F(x)g(x) \right|_{a}^{b} - \int_{a}^{b} F(x)g'(x)\,dx \]
+            </p>
+            <p class="t-note">
+                where \( F(x) \) is an anti-derivative of the function \( f(x) \).
+            </p>
+            <p class="t-normal">
+                \[ \int u\,dv = uv - \int v\,du \]
+            </p>
+            <p class="t-note">
+                Here, \( u \) takes the role of \( g(x) \), while \( v \) takes the role of \( F(x) \).
+                In fact, these variables \( u \) and \( v \) are still functions of \( x \), even though we do not make
+                this explicit.
+            </p>
+        </div>
+        <div class="row">
+            <p class="heading h-3">Method of substitution</p>
+            <p class="t-note">If <span class="t-normal">\( u = g(x) \)</span>, then \( du = g'(x)dx \). Therefore,</p>
+            <p class="t-normal">
+                \[ \int f(g(x))g'(x)\,dx = \int f(u)\,du \]
+            </p>
+            <p class="t-note">
+                For definite integrals,
+            </p>
+            <p class="t-normal">
+                \[ \int_{a}^{b} f(g(x))g'(x)\,dx = \int_{g(a)}^{g(b)} f(u)\,du \]
+            </p>
+        </div>
+        <div class="row">
+            <p class="heading h-3">Fundamental theorem of calculus</p>
+            <p class="t-note">If the function \( f(x) \) is intergrable* over the interval \( [a, b] \), then</p>
+            <p class="heading h-3">Part 1</p>
+            <p class="t-normal">
+                \[
+                \int_{a}^{b} f(x)\,dx = F(b) - F(a)
+                \]
+            </p>
+            <p class="t-note">
+                <span>where \( F(x) \) is any anti-derivative of \( f(x) \).</span>
+                <br>
+                <span>intergrable*: A function \( F(x) \) is an antiderivative of \( f(x) \) if \( \frac{dF}{dx} = f(x) \).</span>
+            </p>
+            <p class="heading h-3">Part 2</p>
+            <p class="t-normal">
+                \[
+                F(x) = \int_{a}^{x} f(t)\,dt
+                \]
+            </p>
+            <p class="t-note">
+                is an anti-derivative of \( f(x) \), i.e. \( F'(x) = f(x) \).
+            </p>
+        </div>
+        <div class="row">
             <p class="heading h-3">Squeeze theorem</p>
             <p class="t-note">Suppose \( f(x) \), \( g(x) \) and \( h(x) \) are three functions such that</p>
             <p class="t-normal">
