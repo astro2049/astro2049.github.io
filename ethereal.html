@@ -23,6 +23,54 @@
     </div>
     <div class="box" style="margin-top: 0">
         <div class="row">
+            <p class="heading h-3">First order Linear differential equations</p>
+            <p class="t-note">
+                A first-order linear differential equation is one that can be put into the form
+            </p>
+            <p class="t-normal">
+                \[ \frac{dy}{dx} + P(x)y = Q(x) \]
+            </p>
+            <p class="t-note">
+                Remark: We call the equation above the <span style="font-style: italic">standard form</span>
+                <br>
+                Example:
+            </p>
+            <p class="t-normal">
+                \[ y' - 2e^{x}sin(x)y = x^{2}e^{x} \]
+            </p>
+            <p class="t-note">Algorithm to solve 1st order Linear differential equations:</p>
+            <ol class="t-normal">
+                <li>Write in standard form: \( \frac{dy}{dx} + P(x)y = Q(x) \)</li>
+                <li>Compute integrating factor: \( I(x) = e^{\int P(x)\,dx} \)</li>
+                <li>Multiply by \( I(x) \): \( [I(x)y]' = I(x)y' + I(x)P(x)y = I(x)Q(x) \)</li>
+                <li>Integrate: \( I(x)y = \int I(x)Q(x)\,dx \)</li>
+                <li>Divide by \( I(x) \): \( y(x) = \frac{1}{I(x)}\int I(x)Q(x)\,dx \)</li>
+            </ol>
+        </div>
+        <div class="row">
+            <p class="heading h-3">Separable differential equations</p>
+            <p class="t-note">
+                A (first-order) separable differential equation is a first-order differential equation in which the
+                expression for
+                \( y' = \frac{dx}{dy} \) can be factored as a function of \( x \) time a function of \( y \).
+            </p>
+            <p class="t-note">
+                In other words, it can be written in the form
+            </p>
+            <p class="t-normal">
+                \[ \frac{dy}{dx} = f(x)g(y) = \frac{f(x)}{h(y)} \]
+            </p>
+            <p class="t-note">Algorithm to solve separable differential equations:</p>
+            <ol class="t-normal">
+                <li>write DE as \( \frac{dy}{dx} = \frac{f(x)}{h(y)} \)</li>
+                <li>Separate variables: \( h(y)dy = f(x)dx \)</li>
+                <li>Find anti-derivatives: \( H(y) = \int h(y)\,dy = \int f(x)\,dx = F(x) + C \)</li>
+                <li>Implicit solution: \( H(y) = F(x) + C \) with \( C \in \mathbb{R} \)</li>
+                <li>*Explicit solution: \( y(x) = H^{-1}(F(x) + C) \) with \( C \in \mathbb{R} \)</li>
+                <li class="t-note" style="list-style-type: none">*if possible</li>
+            </ol>
+        </div>
+        <div class="row">
             <p class="heading h-3">Integration by Parts</p>
             <p class="t-normal">
                 \[ \int_{a}^{b} f(x)g(x)\,dx = \left. F(x)g(x) \right|_{a}^{b} - \int_{a}^{b} F(x)g'(x)\,dx \]
