@@ -23,6 +23,91 @@
     </div>
     <div class="box" style="margin-top: 0">
         <div class="row">
+            <p class="heading h-3">The Gradient</p>
+            <p class="t-note">
+                From...
+                \[
+                D_{u}f(\mathbf{P}) = \nabla f(\mathbf{P}) \cdot \mathbf{u} = |\nabla f(\mathbf{P})| \cdot
+                \cos(\theta)
+                \]
+            </p>
+            <p class="t-note">
+                Here are some key properties of <span class="t-normal">the gradient \( \nabla f \)</span>:
+            </p>
+            <p class="t-normal">
+                1. Direction of Steepest Ascent:
+            </p>
+            <p class="t-note">
+                \( \nabla f \) indicates the direction in which this derivative is maximized, since the dot product \(
+                \nabla f \cdot \mathbf{u} \) is maximized when \( \nabla f \) and \( \mathbf{u} \) are parallel. Here,
+                <span class="t-normal">
+                    \[
+                    \mathbf{u} = \frac{\nabla f}{\|\nabla f\|}
+                    \]
+                </span>
+                If we want to maximize \( D_{u}f \), we let \( \mathbf{u} \) be parallel to \( \nabla f \), and in this
+                case
+                \[
+                D_{u}f = \|\nabla f\|
+                \]
+                where the magnitude \( \|\nabla f\| \) indicates the maximum rate of change.
+            </p>
+            <p class="t-normal">
+                2. Orthogonal to Level Curves/Surfaces:
+            </p>
+            <p class="t-note">
+                For a function \( f(x, y) \) at point \( P = (x_0, y_0) \), say \( \nabla f(x_0, y_0) = (a, b) \).
+                The equation of the tangent line to the level curve \( f(x, y) = c \) at \( (x_0, y_0) \) is given by:
+            </p>
+            <div style="display: flex; justify-content: space-between">
+                <div style="width: 33%"></div>
+                <div class="t-normal" style="width: 33%; text-align: center">\( a \cdot x + b \cdot y = k \)</div>
+                <div class="t-note" style="width: 33%">(normal form)</div>
+            </div>
+            <p class="t-note">
+                Here, \( k = a \cdot x_0 + b \cdot y_0 \), by plugging in \( (x_0, y_0) \).
+            </p>
+        </div>
+        <div class="row">
+            <p class="heading h-3">Directional derivatives</p>
+            <p class="t-note">
+                To calculate the directional derivative of a function \( f(x, y, z) \) at a point \( (x_0, y_0, z_0) \)
+                in the direction of a vector \( \mathbf{u} = (v_1, v_2, v_3) \),
+            </p>
+            <p class="t-normal">
+                \[
+                D_{\mathbf{u}}f = f_x v_1 + f_y v_2 + f_z v_3 = \left( f_x, f_y, f_z \right) \cdot (v_1, v_2, v_3) =
+                \nabla f \cdot \mathbf{u}
+                \]
+            </p>
+            <p class="t-note">
+                Here, <span class="t-normal">\( \nabla f \), known as the gradient vector (field) of \( f \)</span>, is
+                a vector consisting of the partial derivatives of \( f \). It is defined as
+            </p>
+            <p class="t-normal">
+                \[
+                \nabla f = \left( f_x, f_y, f_z \right) = \left( \frac{\partial f}{\partial x}, \frac{\partial
+                f}{\partial y}, \frac{\partial f}{\partial z} \right)
+                \]
+            </p>
+            <p class="t-note">
+                And, the gradient vector \( \nabla f \) at the point \( (a_0, a_1, a_2) \) is given by
+            </p>
+            <p class="t-normal">
+                \[
+                \nabla f(a_0, a_1, a_2) = \left( f_x(a_0, a_1, a_2), f_y(a_0, a_1, a_2), f_z(a_0, a_1, a_2) \right)
+                \]
+            </p>
+            <p class="t-note">
+                In another sense,
+            </p>
+            <p class="t-normal">
+                \[
+                D_{u}f(\mathbf{P}) = \nabla f(\mathbf{P}) \cdot \mathbf{u} = |\nabla f(\mathbf{P})| \cdot \cos(\theta)
+                \]
+            </p>
+        </div>
+        <div class="row">
             <p class="heading h-3">First order Linear differential equations</p>
             <p class="t-note">
                 A first-order linear differential equation is one that can be put into the form
