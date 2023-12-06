@@ -23,6 +23,43 @@
     </div>
     <div class="box" style="margin-top: 0">
         <div class="row">
+            <p class="heading h-3">Hohmann transfer orbit</p>
+            <p class="t-note">
+                Launching to Mars requires a spacecraft to travel in an elliptical orbit about the sun such that the
+                spacecraft and Mars will arrive in the same place at the same time.
+                <br>
+                The most energy efficient orbit of this type is called the Hohmann transfer, in which the spacecraft
+                will travel half of one orbit about the sun, leaving Earth at the orbit’s perihelion and arriving at
+                Mars (or any outer planet) at the orbit's aphelion.
+            </p>
+            <div style="max-width: 800px; margin-left: auto; margin-right: auto">
+                <img width="100%" src="https://www.jpl.nasa.gov/edu/images/activities/hohmann_transfer.png"
+                     alt="the path from Earth to Mars">
+                <span class="t-note" style="font-size: 15pt">
+                    The red line indicates the orbit of Mars, the blue line indicates the orbit of Earth, and the grey
+                    line indicates the path a spacecraft takes from Earth to Mars when launched on a Hohmann transfer
+                    path. Courtesy NASA/JPL-Caltech.
+                </span>
+            </div>
+            <p class="t-note">
+                With the vis-viva equation, the delta-v (Δv) required for the Hohmann transfer can be computed as
+                follows, under the assumption of instantaneous impulses:
+            </p>
+            <p class="t-normal">
+                \[
+                \Delta V_{1} = \sqrt{\left(\frac{2\mu r_{2}}{r_{1}(r_{1} + r_{2})}\right)} - \sqrt{\frac{\mu}{r_{1}}}
+                \]
+                \[
+                \Delta V_{2} = \sqrt{\frac{\mu}{r_{2}}} - \sqrt{\left(\frac{2\mu r_{1}}{r_{2}(r_{1} + r_{2})}\right)}
+                \]
+            </p>
+            <p class="t-note">
+                While the Hohmann maneuver often uses the lowest possible amount of impulse (which consumes a
+                proportional amount of delta-v, and hence propellant) to accomplish the transfer, it requires a
+                relatively longer travel time than higher-impulse transfers.
+            </p>
+        </div>
+        <div class="row">
             <p class="heading h-3">Vis-viva equation (orbital-energy-invariance law)</p>
             <p class="t-note">
                 For any Keplerian orbit (conical: elliptic, parabolic, hyperbolic, or radial)
