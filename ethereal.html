@@ -23,6 +23,132 @@
     </div>
     <div class="box" style="margin-top: 0">
         <div class="row">
+            <p class="heading h-3">Hyperbolic excess velocity</p>
+            <p class="heading h-3">Escape speed</p>
+            <p class="t-note">
+                Escape speed at a distance d from the center of a spherically symmetric primary body (such as a star or
+                a planet) with mass \( M \) is given by the formula
+            </p>
+            <p class="t-normal">
+                \[
+                v_{e} = \sqrt{\frac{2\mu}{r}}
+                \]
+            </p>
+            <p class="heading h-3">Specific orbital energy</p>
+            <p class="t-note">
+                In the gravitational two-body problem, the specific orbital energy \( \epsilon \) (or vis-viva energy)
+                of two orbiting bodies is the constant sum of their mutual potential energy \( \epsilon_p \) and their
+                total kinetic energy \( \epsilon_k \), divided by the reduced mass. According to the orbital energy
+                conservation equation (also referred to as vis-viva equation), it does not vary with time:
+            </p>
+            <p class="t-normal">
+                \[
+                \epsilon = \epsilon_k + \epsilon_p = \frac{v^2}{2} - \frac{\mu}{r}
+                \]
+            </p>
+            <p class="t-normal">
+                Equation forms for different orbits:
+            </p>
+            <div style="display: flex; justify-content: space-between">
+                <div style="width: 30%; display: flex; flex-direction: column; justify-content: space-between">
+                    <span class="t-note">For an elliptic orbit, the equation simplifies to:</span>
+                    <div class="t-normal">
+                        \[
+                        \epsilon = -\frac{\mu}{2a}
+                        \]
+                    </div>
+                    <span></span>
+                </div>
+                <div style="width: 30%; display: flex; flex-direction: column; justify-content: space-between">
+                    <span class="t-note">For a parabolic orbit the equation simplifies to:</span>
+                    <div class="t-normal">
+                        \[
+                        \epsilon = 0
+                        \]
+                    </div>
+                    <span></span>
+                </div>
+                <div style="width: 30%">
+                    <span class="t-note">
+                        For a hyperbolic trajectory this specific orbital energy is either given by
+                    </span>
+                    <div class="t-normal">
+                        \[
+                        \epsilon = \frac{\mu}{2a}
+                        \]
+                    </div>
+                    <span class="t-note">
+                        or the same as for an ellipse, depending on the convention for the sign of \( a \).
+                    </span>
+                </div>
+            </div>
+            <p class="heading h-3">Hyperbolic excess velocity</p>
+            <p class="t-note">
+                When given an initial speed \( v_d \) greater than the escape speed \( v_e \), the object will
+                asymptotically approach the hyperbolic excess speed \( v_{\infty} \), satisfying the equation:
+            </p>
+            <p class="t-normal">
+                \[
+                v_{\infty}^2 = v_d^2 - v_e^2
+                \]
+            </p>
+            <p class="t-note">
+                where \( v_d \) is the departure velocity.
+            </p>
+        </div>
+        <div class="row">
+            <p class="heading h-3">Sphere of influence (SOI)</p>
+            <p class="t-note">
+                Sphere around each planet inside which the motion of a spacecraft is considered to be two-body
+                Keplerian.
+                <br>
+                The radius of the sphere of influence \( r_{SOI} \) has been determined by Laplace as:
+            </p>
+            <p class="t-normal">
+                \[
+                r_{SOI} \approx a \left( \frac{m}{M} \right)^{\frac{2}{5}}
+                \]
+            </p>
+            <p class="t-note">
+                where:
+            </p>
+            <ul class="t-note">
+                <li>
+                    \( a \) is the semimajor axis of the planet's orbit around the Sun.
+                </li>
+                <li>
+                    \( m \) and \( M \) are the masses of the planet and the Sun, respectively.
+                </li>
+            </ul>
+        </div>
+        <div class="row">
+            <p class="heading h-3">Catch up rate for nearby orbits</p>
+            <p class="t-normal">
+                For circular orbits <span class="t-note">with \(\Delta r \ll r\)</span>:
+                \[ \Delta X \approx 3\pi \Delta r \]
+            </p>
+            <p class="t-note">
+                If two objects are on the same local vertical at some point, after one full orbit, the lower
+                object will have moved forward by a distance equal to ten times the difference in attitude.
+            </p>
+            <p class="t-normal">
+                For circular / close elliptical orbits <span class="t-note">with \(|r - a| \ll r\)</span>:
+                \[ \Delta X \approx 3\pi (r - a) \]
+            </p>
+        </div>
+        <div class="row">
+            <p class="heading h-3">Change of orbital plane at equator crossing</p>
+            <p class="t-normal">
+                \[
+                \Delta V = 2V_i \sin \left( \frac{\alpha}{2} \right)
+                \]
+            </p>
+            <p class="t-note">
+                This is generally costly; in LEO, a 10° change of orbital plane costs a ΔV of close to 1.4 km/s, and
+                consequently a large quantity of propellant!
+            </p>
+        </div>
+        <div class="row">
             <p class="heading h-3">Hohmann transfer orbit</p>
             <p class="t-note">
                 Launching to Mars requires a spacecraft to travel in an elliptical orbit about the sun such that the
@@ -58,6 +184,15 @@
                 proportional amount of delta-v, and hence propellant) to accomplish the transfer, it requires a
                 relatively longer travel time than higher-impulse transfers.
             </p>
+            <p class="heading h-3">Case of small ΔV, For LEO</p>
+            <p class="t-normal">
+                \[
+                \Delta r \approx 3.5\Delta V
+                \]
+            </p>
+            <p class="t-note">
+                *\( \Delta r \) in km and \( \Delta V \) in \( \frac{m}{s} \).
+            </p>
         </div>
         <div class="row">
             <p class="heading h-3">Vis-viva equation (orbital-energy-invariance law)</p>
@@ -80,8 +215,8 @@
                 <li>\( M \) is the mass of the central body</li>
             </ul>
             <p class="t-note">
-                The product of \( G \cdot M \) can also be expressed as the standard gravitational parameter using the
-                Greek letter \( \mu \).
+                The product of \( G \cdot M \) can also be expressed as the <span class="t-normal">standard gravitational parameter</span>
+                using the Greek letter <span class="t-normal">\( \mu \)</span>.
             </p>
         </div>
         <div class="row">
