@@ -23,6 +23,52 @@
     </div>
     <div class="box" style="margin-top: 0">
         <div class="row">
+            <p class="heading h-3">Tsiolkovsky rocket equation</p>
+            <p class="t-note">
+                The maximum change of velocity of the vehicle, \( \Delta v \) (with no external forces acting) is:
+            </p>
+            <p class="t-normal">
+                \[
+                \Delta v = v_e \ln \frac{m_0}{m_f} = I_{sp}g_0 \ln \frac{m_0}{m_f}
+                \]
+            </p>
+            <p class="t-note">
+                where:
+            </p>
+            <ul class="t-note">
+                <li>
+                    \( v_e = I_{sp}g_0 \) is the effective exhaust velocity
+                    <ul>
+                        <li>
+                            \( I_{sp} \) is the specific impulse in dimension of time
+                        </li>
+                        <li>
+                            \( g_0 \) is standard gravity
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    \( m_0 \) is the initial total mass, including propellant, a.k.a. wet mass
+                </li>
+                <li>
+                    \( m_f \) is the final total mass without propellant, a.k.a. dry mass
+                </li>
+            </ul>
+            <p class="t-note">
+                Given the effective exhaust velocity determined by the rocket motor's design, the desired delta-v (e.g.
+                orbital speed or escape velocity), and a given dry mass \( m_f \), the equation can be solved for the
+                required propellant mass \( m_0 - m_f \):
+            </p>
+            <p class="t-normal">
+                \[
+                m_0 = m_f e^{\frac{\Delta v}{v_e}}
+                \]
+            </p>
+            <p class="t-note">
+                The necessary wet mass grows exponentially with the desired delta-v.
+            </p>
+        </div>
+        <div class="row">
             <p class="heading h-3">Hyperbolic excess velocity</p>
             <p class="heading h-3">Escape speed</p>
             <p class="t-note">
