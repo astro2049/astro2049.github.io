@@ -8,9 +8,16 @@ body {
     top: 0;
     left: 0;
     right: 0;
+    min-width: 400px;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+}
+.navbar {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .box {
     padding-left: 20px;
@@ -18,21 +25,33 @@ body {
     margin-top: 40px;
     margin-bottom: 40px;
 }
-.heading {
+/* Colors */
+.ow-gold-light {
     color: #ffe1bb;
 }
+.ow-gold {
+    color: #f4cea7;
+}
+.ow-gold-dark {
+    color: #c29c75;
+}
+/* Headings */
 .h-1 {
     font-size: 30pt;
     font-weight: bold;
+    color: #ffe1bb;
 }
 .h-2 {
     font-size: 25pt;
     font-weight: bold;
+    color: #ffe1bb;
 }
 .h-3 {
     font-size: 20pt;
     font-weight: bold;
+    color: #ffe1bb;
 }
+/* Texts */
 .t-normal {
     font-size: 20pt;
     color: #f4cea7;
@@ -40,6 +59,12 @@ body {
 .t-note {
     font-size: 20pt;
     color: #c29c75;
+}
+/* Links */
+a.planets {
+    font-size: 15pt;
+    font-style: italic;
+    color: #f4cea7;
 }
 a.planets:link {
     text-decoration: none;

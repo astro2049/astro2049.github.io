@@ -4,12 +4,13 @@
     <meta charset="utf-8">
     <title>Vocabulary</title>
     <script src="vocabulary.js"></script>
-    <link href="favicon.svg" rel="icon"/>
+    <link href="images/favicon.svg" rel="icon"/>
     <link href="style.css" rel="stylesheet" type="text/css"/>
     <style>
         .row {
             display: flex;
             justify-content: space-between;
+            color: #f4cea7;
             border-bottom: 1px solid #c29c75;
         }
         .row .number {
@@ -31,8 +32,8 @@
 <body>
 <div id="the-container">
     <div class="box" style="margin-top: 70px; margin-bottom: 0">
-        <p class="h-1 heading">Vocabulary</p>
-        <p class="t-normal" style="font-size: 15pt; font-weight: bold; margin-top: -20px; margin-bottom: 15px;">
+        <p class="h-1">Vocabulary</p>
+        <p class="ow-gold" style="font-size: 15pt; font-weight: bold; margin-top: -20px; margin-bottom: 15px;">
             [Context]: Calculus, Mechanics, Space Exploration, Artificial Intelligence, Computer Graphics,
             Games<br>
             [Disclaimer]: The translations presented are based on my personal understanding of the terms, and may not
@@ -45,13 +46,13 @@
     <div style="padding-top: 20px; padding-bottom: 40px">
         <div class="box" style="display: flex; justify-content: space-between; align-items: center">
             <div style="width: 33%; text-align: center">
-                <a class="t-normal planets" href="index.html" style="font-size: 15pt; font-style: italic">
+                <a class="planets" href="index.html">
                     < Timber Hearth (22 km)
                 </a>
             </div>
             <div style="width: 33%; text-align: center">
                 <img alt="Orbital Probe Cannon from Outer Wilds. Originally made by u/rio_slayer_of_horny - Reddit."
-                     src="orbital_probe_canon.svg" width="200"/>
+                     src="images/orbital_probe_canon.svg" width="200"/>
             </div>
             <div style="width: 33%"></div>
         </div>
@@ -65,11 +66,11 @@
         const card = document.createElement("div");
         card.className = "card";
         const phrase = document.createElement("p");
-        phrase.className = "t-normal phrase";
+        phrase.className = "phrase";
         phrase.textContent = sWord;
         card.appendChild(phrase);
         const translation = document.createElement("p");
-        translation.className = "t-normal translation";
+        translation.className = "translation";
         translation.textContent = sTranslation;
         card.appendChild(translation);
         return card;
@@ -81,7 +82,7 @@
             const row = document.createElement("div");
             row.className = "row";
             const num = document.createElement("p");
-            num.className = "heading number";
+            num.className = "number";
             num.textContent = i.toString();
             row.appendChild(num);
             const start = words.length - 1 - (rows - 1 - i) * cols;
