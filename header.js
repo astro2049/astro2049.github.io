@@ -1,7 +1,6 @@
 function addHeader() {
     const headerHtml =
-        '<div style="padding-bottom: 20px; border-bottom: 1px solid #c29c75">' +
-        '<div style="display: flex; justify-content: space-between">' +
+        '<div style="padding: 30px 0 18px; display: flex; justify-content: space-between; align-items: center">' +
         '<a style="width: 15%;" class="planets" href="index.html">Home</a>' +
         '<a class="planets" href="atlas.html">Hourglass Twins</a>' +
         '<a class="planets" href="Summer%20Wine.html">Brittle Hollow</a>' +
@@ -9,7 +8,6 @@ function addHeader() {
         '<a class="planets" href="ethereal.html">Giant’s Deep</a>' +
         '<a class="planets" href="Apex.html">Attlerock</a>' +
         '<a class="planets" href="credits.html">Sun Station [Credits]</a>' +
-        '</div>' +
         '</div>';
     document.getElementById("header").innerHTML += headerHtml;
     const links = document.querySelectorAll("#header a");

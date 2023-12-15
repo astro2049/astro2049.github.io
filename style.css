@@ -5,16 +5,19 @@ body {
 }
 /* Header */
 #header {
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    margin: 0 20px 30px;
+    border-bottom: 1px solid #c29c75;
 }
 #header a {
     display: block;
+    border-bottom: 2px solid transparent;
 }
 #header a.planets {
     font-style: normal;
+}
+#header a.planets:hover {
+    text-decoration: none;
+    border-bottom-color: #c29c75;
 }
 /* Containers */
 #the-container {
