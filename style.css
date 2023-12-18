@@ -10,13 +10,12 @@ body {
 }
 #header a {
     display: block;
+    font-size: 15pt;
+    color: #f4cea7;
+    text-decoration: none;
     border-bottom: 2px solid transparent;
 }
-#header a.planets {
-    font-style: normal;
-}
-#header a.planets:hover {
-    text-decoration: none;
+#header a:hover {
     border-bottom-color: #c29c75;
 }
 /* Containers */
@@ -72,15 +71,32 @@ body {
     color: #c29c75;
 }
 /* Links */
-a.planets {
+.planets {
     font-size: 15pt;
     font-style: italic;
-    color: #f4cea7;
 }
-a.planets:link {
+.planets .main-text {
+    color: #f4cea7;
     text-decoration: none;
 }
-a.planets:hover {
+.planets .main-text:hover {
+    text-decoration: underline;
+}
+.planets .aux-text {
+    display: block;
+    visibility: hidden;
+    color: #c29c75;
+}
+.planets .main-text:hover + .aux-text {
+    visibility: visible;
+}
+.ow-link {
+    font-size: 20pt;
+    font-style: italic;
+    color: #f4cea7;
+    text-decoration: none;
+}
+.ow-link:hover {
     text-decoration: underline;
 }
 #arrow-down:hover {
