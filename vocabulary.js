@@ -1088,4 +1088,9 @@ const words = [
     ["aerobatics", "特技飞行"],
     ["In-Situ Resource Utilization (ISRU)", "就地资源利用"],
     ["excursion", "游览"],
+    ["mundane", "平凡的"],
+    ["singular", "奇特的"],
+    ["lucrative", "有利可图的"],
+    ["hammock", "吊床"],
+    ["succinct", "简洁的"],
 ];
