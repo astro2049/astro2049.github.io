@@ -37,6 +37,11 @@ body {
     margin-top: 40px;
     margin-bottom: 40px;
 }
+.vertical-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 /* Colors */
 .ow-gold-light {
     color: #ffe1bb;
