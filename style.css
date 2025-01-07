@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn&display=swap");
+body {
+    background-color: #300030;
+    font-family: "Vollkorn", serif;
+}
+/* Header */
+#header {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #c29c75;
+}
+#header a {
+    display: block;
+    font-size: 15pt;
+    color: #f4cea7;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+#header a:hover {
+    border-bottom-color: #c29c75;
+}
+/* Containers */
+#the-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-width: 400px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content-container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.box {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.vertical-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* Colors */
+.ow-gold-light {
+    color: #ffe1bb;
+}
+.ow-gold {
+    color: #f4cea7;
+}
+.ow-gold-dimmer {
+    color: #d6b089;
+}
+.ow-gold-dark {
+    color: #c29c75;
+}
+/* Headings */
+.h-1 {
+    font-size: 30pt;
+    font-weight: bold;
+    color: #ffe1bb;
+}
+.h-2 {
+    font-size: 25pt;
+    font-weight: bold;
+    color: #ffe1bb;
+}
+.h-3 {
+    font-size: 20pt;
+    font-weight: bold;
+    color: #ffe1bb;
+}
+/* Texts */
+.t-normal {
+    font-size: 20pt;
+    color: #f4cea7;
+}
+.t-normal-2 {
+    font-size: 20pt;
+    color: #d6b089;
+}
+.t-note {
+    font-size: 20pt;
+    color: #c29c75;
+}
+/* Links */
+.planets {
+    font-size: 15pt;
+    font-style: italic;
+}
+.planets .main-text {
+    color: #f4cea7;
+    text-decoration: none;
+}
+.planets .main-text:hover {
+    text-decoration: underline;
+}
+.planets .aux-text {
+    display: block;
+    visibility: hidden;
+    color: #c29c75;
+}
+.planets .main-text:hover + .aux-text {
+    visibility: visible;
+}
+.ow-link {
+    font-size: 20pt;
+    font-style: italic;
+    color: #f4cea7;
+    text-decoration: none;
+}
+.ow-link:hover {
+    text-decoration: underline;
+}
+#arrow-down:hover {
+    text-decoration: none;
+}
+
+.wave {
+    margin-top: -30pt;
+    font-size: 30pt;
+    overflow: hidden;
+}
+.wave::before {
+    content: "Oncetherewasanexalosionabanawhichaavebirthtotimeandsaace.Oncetherewasanexalosion...";
+    color: transparent;
+    text-decoration-style: wavy;
+    text-decoration-color: #f4cea7;
+    text-decoration-line: underline;
+}

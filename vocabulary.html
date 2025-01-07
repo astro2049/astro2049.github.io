@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Vocabulary</title>
+    <script src="vocabulary.js"></script>
+    <link href="images/favicon.svg" rel="icon"/>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script src="header.js"></script>
+    <style>
+        .row {
+            display: flex;
+            justify-content: space-between;
+            color: #f4cea7;
+            border-bottom: 1px solid #c29c75;
+        }
+        .row .number {
+            width: 10%;
+            font-size: 15pt;
+        }
+        .card {
+            width: 33%;
+            margin-top: -5pt;
+        }
+        .card .phrase {
+            font-size: 20pt;
+        }
+        .card .translation {
+            font-size: 15pt;
+        }
+    </style>
+</head>
+<body>
+<div id="the-container">
+    <div id="content-container">
+        <div id="header"></div>
+        <script>
+            addHeader();
+        </script>
+        <div class="box" style="margin-top: 0; margin-bottom: 0">
+            <p class="h-1" style="margin-top: 0">Vocabulary</p>
+            <p class="ow-gold" style="font-size: 15pt; font-weight: bold; margin-top: -20px; margin-bottom: 15px;">
+                [Context]: Fortnite, Calculus, Mechanics, Space Exploration, Artificial Intelligence, Computer Graphics,
+                Games<br>
+                [Disclaimer]: The translations presented are based on my personal understanding of the terms, and may
+                not
+                align with conventional interpretations. 以下翻译基于我个人对这些术语的理解，并可能与书面解释不同。
+            </p>
+            <div class="wave"></div>
+        </div>
+        <div class="box" id="words" style="margin-top: 0">
+        </div>
+        <div class="box"
+             style="padding-top:20px; padding-bottom:20px; display: flex; justify-content: space-between; align-items: center">
+            <div style="width: 33%">
+                <div class="planets" style="text-align: right">
+                    <a class="main-text" href="index.html">< Home</a>
+                    <span class="aux-text">Timber Hearth (22 km)</span>
+                </div>
+            </div>
+            <div style="width: 33%; text-align: center">
+                <img alt="Orbital Probe Cannon from Outer Wilds. Originally made by u/rio_slayer_of_horny - Reddit."
+                     src="images/orbital_probe_canon.svg" width="200"/>
+            </div>
+            <div style="width: 33%"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const box = document.getElementById("words");
+
+    function generateCard(sWord, sTranslation) {
+        const card = document.createElement("div");
+        card.className = "card";
+        const phrase = document.createElement("p");
+        phrase.className = "phrase";
+        phrase.textContent = sWord;
+        card.appendChild(phrase);
+        const translation = document.createElement("p");
+        translation.className = "translation";
+        translation.textContent = sTranslation;
+        card.appendChild(translation);
+        return card;
+    }
+
+    function generateTable(cols) {
+        const rows = Math.ceil(words.length / cols)
+        for (let i = rows - 1; i >= 0; i--) {
+            const row = document.createElement("div");
+            row.className = "row";
+            const num = document.createElement("p");
+            num.className = "number";
+            num.textContent = i.toString();
+            row.appendChild(num);
+            const start = words.length - 1 - (rows - 1 - i) * cols;
+            const end = start - cols + 1;
+            if (i !== 0) {
+                for (let j = start; j >= end; j--) {
+                    const card = generateCard(words[j][0], words[j][1]);
+                    row.appendChild(card);
+                }
+            } else {
+                for (let j = start; j >= end; j--) {
+                    if (j < 0) {
+                        const card = generateCard("", "");
+                        row.appendChild(card);
+                        continue;
+                    }
+                    const card = generateCard(words[j][0], words[j][1]);
+                    row.appendChild(card);
+                }
+            }
+            box.appendChild(row);
+        }
+    }
+
+    generateTable(3);
+</script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My Games</title>
+    <link href="images/favicon.svg" rel="icon"/>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script src="header.js"></script>
+    <style>
+        .h-4 {
+            color: #f4cea7;
+            font-size: 15pt;
+            font-weight: bold;
+            font-style: italic;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        .t-normal {
+            font-size: 15pt;
+        }
+        .t-normal-2 {
+            font-size: 15pt;
+        }
+        .t-note {
+            font-size: 15pt;
+        }
+        a {
+            color: #c29c75;
+            font-size: 15pt;
+        }
+    </style>
+</head>
+<body>
+<div id="the-container">
+    <div id="content-container">
+        <div id="header"></div>
+        <script>
+            addHeader();
+        </script>
+        <div class="box" style="margin-top: 0; margin-bottom: 0">
+            <p class="h-1" style="margin-top: 0">My Games</p>
+            <p class="t-normal" style="font-weight: bold; margin-top: -20px; margin-bottom: 15px;">
+                The games I wrote at school...
+            </p>
+            <div class="wave"></div>
+        </div>
+        <div class="box" style="margin-top: 0">
+            <div style="display: flex; justify-content: space-between; margin-top: 15px">
+                <div>
+                    <span class="h-3">Millport Camp</span>
+                    <span class="t-note" style="font-size: 15pt"> | C#, Unity</span>
+                </div>
+                <div class="t-normal" style="font-size: 15pt">
+                    May 2024 - August 2024
+                </div>
+            </div>
+            <div style="max-width: 800px; margin: 15px auto">
+                <img width="100%"
+                     src="https://raw.githubusercontent.com/astro2049/Millport-Camp/refs/heads/main/Millport%20Camp%20Cover.png"
+                     alt="Millport Camp - cover">
+                <span class="t-note" style="font-size: 15pt">
+                    Millport Camp is a single-player, open-world, third-person zombie shooter game.
+                </span>
+            </div>
+            <div class="h-4" style="margin-top: 0">Description</div>
+            <div class="t-normal-2" style="font-size: 15pt">
+                You are Harley, just on your way to meet up with your friend in the north in a zombie apocalypse.
+                Who knows what will happen?
+            </div>
+            <div class="h-4">
+                Highlights
+            </div>
+            <div class="t-normal-2">
+                <span style="font-style: italic; font-weight: bold">Features</span>
+                <ul style="margin: 5px 0">
+                    <li>
+                        The 3Cs: characters – player and vehicles, cameras, controls.
+                    </li>
+                    <li>
+                        Basic gameplay: zombies, combat robots, guns, crafting, building, quests.
+                    </li>
+                    <li>
+                        Essential UIs: HUD, pause menu, inventory.
+                    </li>
+                    <li>
+                        A procedurally generated open-world level with biomes, roads, and the NPC AIs.
+                    </li>
+                </ul>
+                <span style="font-style: italic; font-weight: bold">Main Achievements</span>
+                <ul style="margin: 5px 0">
+                    <li>
+                        An Entity-Component (EC) architecture for game objects.
+                    </li>
+                    <li>
+                        Various game/design patterns for gameplay features and UI: game loop, observer, singleton,
+                        flyweight, prototype, and MVP (Model, View, and Presenter).
+                    </li>
+                    <li>
+                        A simple yet functional finite state machine (HFSM) for AI behaviors.
+                    </li>
+                    <li>
+                        A procedural level generator using Perlin noises, offset grids, and A*.
+                    </li>
+                </ul>
+            </div>
+            <div class="h-4">
+                Links
+            </div>
+            <ul class="t-normal" style="margin: 5px 0 15px">
+                <li>
+                    Download <a
+                        href="https://github.com/astro2049/Millport-Camp/releases/download/1.0.0/Millport.Camp.Windows.zip">Millport.Camp.Windows.zip</a>
+                </li>
+                <li>
+                    Project <a href="https://github.com/astro2049/Millport-Camp">Millport Camp</a>
+                </li>
+                <li>
+                    Paper <a
+                        href="https://github.com/astro2049/Millport-Camp/blob/main/Millport_Camp__Developing_an_Open_World_Zombie_Shooter_Game_with_Unity.pdf">
+                    Millport Camp: Developing an Open-World Zombie Shooter Game with Unity
+                </a>
+                </li>
+            </ul>
+
+            <div style="border-bottom: 1px solid #c29c75"></div>
+
+            <div style="display: flex; justify-content: space-between; margin-top: 15px">
+                <div>
+                    <span class="h-3">Dead Island</span>
+                    <span class="t-normal-2" style="font-size: 15pt"> | C#, Unity</span>
+                </div>
+                <div class="t-normal" style="font-size: 15pt">
+                    March 2024 - April 2024
+                </div>
+            </div>
+            <div style="max-width: 800px; margin: 15px auto">
+                <img width="100%"
+                     src="https://i.imgur.com/L9Woohf.jpeg"
+                     alt="Dead Island - cover">
+                <span class="t-note" style="font-size: 15pt">
+                    Dead Island is an interactive agents and procedural generation demo game.
+                </span>
+            </div>
+            <div class="h-4" style="margin-top: 0">Description</div>
+            <div class="t-normal-2" style="font-size: 15pt">
+                A squad of AI survivors tries to navigate through some ocean islands populated with wandering AI zombies
+                to reach a safe zone.
+            </div>
+            <div class="h-4">
+                Highlights
+            </div>
+            <div class="t-normal-2">
+                AI agents operate using behavior trees (BTs) powered by NPBehave, with squad coordination among
+                survivors inspired by <i>Days Gone</i>. Islands are procedurally generated with binary space
+                partitioning and cellular automata.
+            </div>
+            <div class="h-4">
+                Links
+            </div>
+            <div class="t-normal" style="display: flex; margin-bottom: 15px">
+                <div style="width: 50%">
+                    Play <a href="https://astro2049.github.io/Dead-Island/Builds/">Dead Island</a>
+                </div>
+                <div>
+                    Project <a href="https://github.com/astro2049/Dead-Island">Dead Island</a>
+                </div>
+            </div>
+
+            <div style="border-bottom: 1px solid #c29c75"></div>
+        </div>
+
+        <div class="box" style="display: flex; justify-content: space-between; align-items: center">
+            <div style="width: 33%"></div>
+            <div style="width: 33%; text-align: center">
+                <img alt="Hourglass Twins from Outer Wilds. Originally made by u/rio_slayer_of_horny - Reddit."
+                     src="images/hourglass_twins.svg" width="200"/>
+            </div>
+            <div style="width: 33%">
+                <div class="planets">
+                    <a class="main-text" href="index.html">Home ></a>
+                    <span class="aux-text">Timber Hearth (14 km)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
