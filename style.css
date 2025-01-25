@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Vollkorn&display=swap");
+:root {
+    /* Colors */
+    --ow-gold-light: #ffe1bb;
+    --ow-gold: #f4cea7;
+    --ow-gold-dimmer: #d6b089;
+    --ow-gold-dark: #c29c75;
+}
 body {
     background-color: #300030;
     font-family: "Vollkorn", serif;
@@ -6,17 +13,17 @@ body {
 /* Header */
 nav {
     margin-bottom: 30px;
-    border-bottom: 1px solid #c29c75;
+    border-bottom: 1px solid var(--ow-gold-dark);
 }
 nav a {
     display: block;
     font-size: 15pt;
-    color: #f4cea7;
+    color: var(--ow-gold);
     text-decoration: none;
     border-bottom: 2px solid transparent;
 }
 nav a:hover {
-    border-bottom-color: #c29c75;
+    border-bottom-color: var(--ow-gold-dark);
 }
 /* Containers */
 #the-container {
@@ -40,54 +47,41 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
 }
-/* Colors */
-.ow-gold-light {
-    color: #ffe1bb;
-}
-.ow-gold {
-    color: #f4cea7;
-}
-.ow-gold-dimmer {
-    color: #d6b089;
-}
-.ow-gold-dark {
-    color: #c29c75;
-}
 /* Headings */
 .h-1 {
     font-size: 30pt;
     font-weight: bold;
-    color: #ffe1bb;
+    color: var(--ow-gold-light);
 }
 .h-2 {
     font-size: 25pt;
     font-weight: bold;
-    color: #ffe1bb;
+    color: var(--ow-gold-light);
 }
 .h-3 {
     font-size: 20pt;
     font-weight: bold;
-    color: #ffe1bb;
+    color: var(--ow-gold-light);
 }
 /* Texts */
 .t-normal {
     font-size: 20pt;
-    color: #f4cea7;
+    color: var(--ow-gold);
 }
 .t-normal-2 {
     font-size: 20pt;
-    color: #d6b089;
+    color: var(--ow-gold-dimmer);
 }
 .t-note {
     font-size: 20pt;
-    color: #c29c75;
+    color: var(--ow-gold-dark);
 }
 /* Links */
 .planets {
     font-size: 15pt;
 }
 .planets .main-text {
-    color: #f4cea7;
+    color: var(--ow-gold);
     text-decoration: none;
 }
 .planets .main-text:hover {
@@ -96,7 +90,7 @@ nav a:hover {
 .planets .aux-text {
     display: block;
     visibility: hidden;
-    color: #c29c75;
+    color: var(--ow-gold-dark);
 }
 .planets .main-text:hover + .aux-text {
     visibility: visible;
@@ -104,7 +98,7 @@ nav a:hover {
 .ow-link {
     font-size: 20pt;
     font-style: italic;
-    color: #f4cea7;
+    color: var(--ow-gold);
     text-decoration: none;
 }
 .ow-link:hover {
@@ -123,6 +117,6 @@ nav a:hover {
     content: "Oncetherewasanexalosionabanawhichaavebirthtotimeandsaace.Oncetherewasanexalosion...";
     color: transparent;
     text-decoration-style: wavy;
-    text-decoration-color: #f4cea7;
+    text-decoration-color: var(--ow-gold);
     text-decoration-line: underline;
 }
